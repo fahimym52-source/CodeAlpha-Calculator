@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
+import { Calculator, Sun, Moon } from "lucide-react";
 function App() {
   const [display, setDisplay] = useState("0");
 
@@ -13,19 +14,30 @@ function App() {
   const handleNumber = (number) => {
     if (isCalculated) {
       setDisplay(number);
+      setExpression(number);
       setIsCalculated(false);
       return;
     }
     setDisplay((prev) => (prev === "0" ? number : prev + number));
+    if (operator !== null) {
+      setExpression(
+        `${firstNumber} ${operator} ${display === "0" ? number : display + number}`,
+      );
+    }
+    if (operator === null) {
+      setExpression(display === "0" ? number : display + number);
+    }
   };
 
   const handleOperator = (op) => {
     if (operator !== null) {
       setOperator(op);
+      setExpression(`${firstNumber} ${op}`);
       return;
     }
     setFirstNumber(Number(display));
     setOperator(op);
+    setExpression(`${display} ${op}`);
     setDisplay("0");
   };
 
@@ -72,6 +84,7 @@ function App() {
     setFirstNumber(null);
     setOperator(null);
     setIsCalculated(false);
+    setExpression("");
   };
   const handleDelet = () => {
     setDisplay((prev) => (prev.length > 1 ? prev.slice(0, -1) : "0"));
@@ -93,11 +106,53 @@ function App() {
   const handleToggleSign = () => {
     setDisplay(String(Number(display) * -1));
   };
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key >= "0" && event.key <= "9") {
+        handleNumber(event.key);
+      }
+      if (["+", "-", "*", "/"].includes(event.key)) {
+        handleOperator(event.key);
+      }
+      if (event.key === "Enter" || event.key === "=") {
+        handleCalculate();
+      }
+      if (event.key === "Backspace") {
+        handleDelet();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  });
   return (
     <main className="min-h-screen flex items-center justify-center bg-slate-950 p-4">
+      <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-between border-b border-cyan-500/20 bg-slate-950/80 px-6 py-3 backdrop-blur-xl">
+        <div className="flex items-center gap-3">
+          <div className="rounded-xl bg-gradient-to-br from-purple-600 to-cyan-500 p-2 text-white shadow-lg shadow-purple-500/30">
+            <Calculator size={24} />
+          </div>
+
+          <div className="h-7 w-px bg-slate-600"></div>
+
+          <span className="text-sm font-medium text-slate-300">
+            Smart Calculator
+          </span>
+        </div>
+        <div className="flex items-center gap-3 rounded-full border border-purple-500/30 bg-slate-900/80 px-3 py-2">
+          <Sun size={18} className="text-yellow-300" />
+
+          <div className="h-7 w-7 rounded-full bg-gradient-to-br from-purple-500 to-cyan-400 shadow-lg shadow-purple-500/30"></div>
+
+          <Moon size={18} className="text-white" />
+        </div>
+      </header>
       <div className="w-full max-w-md rounded-3xl border border-cyan-500/40 bg-slate-900 p-6 shadow-2xl shadow-purple-500/20">
         <h1 className="text-center text-2xl font-bold text-white">
-          <span className="text-purple-400">NEXORA</span>{" "}
+          {/* <span className="text-purple-400">N</span>{" "} */}
           <span className="text-cyan-400">Calculator</span>
         </h1>
         <div className="mt-8 rounded-2xl border border-cyan-500/20 bg-slate-950/80 p-5 shadow-inner shadow-cyan-500/5">
