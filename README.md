@@ -1,72 +1,88 @@
-# 🧮 Smart Calculator
+# CodeAlpha Smart Calculator
 
-A modern and responsive calculator built with **React.js** and **Tailwind CSS** as part of my **CodeAlpha Front-End Development Internship**.
-
-🌐 **Live Demo:** [Smart Calculator](https://code-alpha-calculator-orpin.vercel.app/)
+A modern, responsive, and interactive calculator built with React, Vite, and Tailwind CSS as part of my CodeAlpha Front-End Development Internship.
 
 ## ✨ Features
 
-- Basic arithmetic operations (Addition, Subtraction, Multiplication, and Division)
-- Keyboard support
-- Real-time calculation display
-- Calculation expression and history
-- Backspace and Clear functionality
-- Percentage calculation
-- Positive/Negative number toggle
-- Dark and Light mode
-- Responsive design
-- Smooth transitions and modern UI
+- **Responsive Design:** Adapts to different screen sizes, including desktops, tablets, and mobile devices.
+- **Basic Arithmetic Operations:** Supports addition, subtraction, multiplication, and division.
+- **Keyboard Support:** Perform calculations using your physical keyboard.
+- **Calculation Display:** Shows the current expression and result.
+- **Backspace Functionality:** Delete numbers one by one.
+- **Percentage Calculation:** Calculate percentages easily.
+- **Positive/Negative Toggle:** Switch between positive and negative numbers.
+- **Dark/Light Mode:** Switch between two different visual themes.
+- **Modern UI:** Clean interface with smooth transitions and interactive buttons.
 
 ## 🛠️ Technologies Used
 
-- React.js
-- JavaScript (ES6+)
-- Tailwind CSS
+- React
 - Vite
+- Tailwind CSS
+- JavaScript
+- HTML5
+- CSS3
 - Lucide React
+
+## 🚀 Live Demo
+
+Try the calculator online:
+
+[**CodeAlpha Smart Calculator**](https://code-alpha-calculator-orpin.vercel.app/)
 
 ## 🚀 Getting Started
 
-To run this project locally:
+Follow these steps to run the project locally.
 
-**1. Clone the repository**
+### Prerequisites
 
-```bash
-git clone https://github.com/fahimym52-source/CodeAlpha-Calculator.git
-```
+Make sure you have Node.js and npm installed on your computer.
 
-**2. Navigate to the project directory**
+### Installation
 
-```bash
-cd CodeAlpha-Calculator
-```
+1. Clone the repository:
 
-**3. Install dependencies**
+   ```bash
+   git clone https://github.com/fahimym52-source/CodeAlpha-Calculator.git
+   ```
 
-```bash
-npm install
-```
+2. Navigate to the project folder:
 
-**4. Start the development server**
+   ```bash
+   cd CodeAlpha-Calculator
+   ```
 
-```bash
-npm run dev
-```
+3. Install the dependencies:
 
-Open the local URL provided by Vite in your browser.
+   ```bash
+   npm install
+   ```
 
-## 🌐 Deployment
+4. Start the development server:
 
-This project is deployed using **Vercel**.
+   ```bash
+   npm run dev
+   ```
 
-[View Live Project][Smart Calculator](https://code-alpha-calculator-orpin.vercel.app/)
+5. Open the local URL displayed in your terminal.
+
+## 🎯 What I Learned
+
+- Building interactive interfaces with React.
+- Managing application state using React Hooks.
+- Handling keyboard events with `useEffect`.
+- Implementing calculator logic and arithmetic operations.
+- Creating dynamic Dark and Light themes.
+- Building responsive layouts with Tailwind CSS.
 
 ## 👨‍💻 Author
 
 **Mohammad Fahimy**
 
-- GitHub: [fahimym52-source](https://github.com/fahimym52-source)
+Front-End Developer | React | JavaScript | Tailwind CSS
 
----
+GitHub: [fahimym52-source](https://github.com/fahimym52-source)
 
-⭐ If you like this project, feel free to give it a star!
+## 📌 Internship
+
+This project was developed as part of the **CodeAlpha Front-End Development Internship**.
