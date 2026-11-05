@@ -1,16 +1,72 @@
-# React + Vite
+# 🧮 Smart Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive calculator built with **React.js** and **Tailwind CSS** as part of my **CodeAlpha Front-End Development Internship**.
 
-Currently, two official plugins are available:
+🌐 **Live Demo:** [View Smart Calculator](YOUR_VERCEL_URL)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- Basic arithmetic operations (Addition, Subtraction, Multiplication, and Division)
+- Keyboard support
+- Real-time calculation display
+- Calculation expression and history
+- Backspace and Clear functionality
+- Percentage calculation
+- Positive/Negative number toggle
+- Dark and Light mode
+- Responsive design
+- Smooth transitions and modern UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
 
-## Expanding the ESLint configuration
+- React.js
+- JavaScript (ES6+)
+- Tailwind CSS
+- Vite
+- Lucide React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+To run this project locally:
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/fahimym52-source/CodeAlpha-Calculator.git
+```
+
+**2. Navigate to the project directory**
+
+```bash
+cd CodeAlpha-Calculator
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Start the development server**
+
+```bash
+npm run dev
+```
+
+Open the local URL provided by Vite in your browser.
+
+## 🌐 Deployment
+
+This project is deployed using **Vercel**.
+
+[View Live Project](YOUR_VERCEL_URL)
+
+## 👨‍💻 Author
+
+**Mohammad Fahimy**
+
+- GitHub: [fahimym52-source](https://github.com/fahimym52-source)
+
+---
+
+⭐ If you like this project, feel free to give it a star!
