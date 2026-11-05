@@ -2,7 +2,7 @@
 
 A modern and responsive calculator built with **React.js** and **Tailwind CSS** as part of my **CodeAlpha Front-End Development Internship**.
 
-🌐 **Live Demo:** [View Smart Calculator]([YOUR_VERCEL_URL](https://code-alpha-calculator-orpin.vercel.app/))
+🌐 **Live Demo:** [Smart Calculator](https://code-alpha-calculator-orpin.vercel.app/)
 
 ## ✨ Features
 
@@ -59,7 +59,7 @@ Open the local URL provided by Vite in your browser.
 
 This project is deployed using **Vercel**.
 
-[View Live Project]([YOUR_VERCEL_URL](https://code-alpha-calculator-orpin.vercel.app/))
+[View Live Project][Smart Calculator](https://code-alpha-calculator-orpin.vercel.app/)
 
 ## 👨‍💻 Author
 
